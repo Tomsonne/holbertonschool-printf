@@ -62,7 +62,7 @@ va_start(arg, format);
 
 		}
 		
-		len += _write(format[i]);
+		len += _write(1,format[i],1);
 		i++;
 	}
 va_end(arg);
