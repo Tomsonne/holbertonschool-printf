@@ -1,10 +1,12 @@
 #include "holberton.h"
-
-
+#include <stdio.h>
+#include <limits.h>
+#include <stdlib.h>
+#include <unistd.h>
 /**
  * print_validate - fonction pour valider si format est valide 
  * 
- * 
+ *@format: entree texte  
  */
 int print_validate(char format)
 {
@@ -23,20 +25,10 @@ int print_validate(char format)
 return(0);
 }
 
-
-
-
-
-
-
-
-
 /**
  * print_all - fontion qui imprime selon un parametre
  * 
- * @format: parametre
- * 
- * 
+ * @format: entree texte
  */
 
  int _printf(const char *format, ...)
@@ -48,32 +40,32 @@ return(0);
 
 	va_list arg;
 
- format_type format[] = {
-
-
-
+ form format_types[] = {
 	{'c', print_char},
 	{'s', print_string},
-	{'%', print_pourcent},
+	{'%', print_char},
+	{' ', NULL},
 	{'\0', NULL}
 };
 
 va_start(arg, format);
 
-/*boucle pour compter le nombre de caracteres qui vont etre imprimer pour le return*/
-	for (i = 0; format [len] < '\0'; len++)
+	while(format[i] == '\0')
 	{
+		if (format[i] == '%')
+		{
+			if (print_validate(format[i++]) == 1)
+			{
+				int val = i;
+				len += format_types[val].f(arg);
+			}
 
-
-
-
-
-
-
-
-
+		}
+		
+		len += _write(format[i]);
+		i++;
 	}
-va_end()
+va_end(arg);
 /*nombre de caractere imprime*/
 	return (len);
 }
