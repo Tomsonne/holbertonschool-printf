@@ -53,41 +53,42 @@ return (6);
 
 int print_int(va_list args)
 {
-int count = 0;
+int count = 1;
+int m = 0, i = 0;
 unsigned int num = 0;
-int n = va_arg(args, int);
+char *Int_min = "-2147483648";
 
-if (n < 0)
+num = va_arg(args, int);
+if (num == INT_MIN)
+{
+	while (Int_min[i] != '\0')
+		_write(Int_min[i++]);
+	return (11);
+}
+if (num < 0)
 {
 	_write('-');
-	num = -n;
-	count++;
-}
-else
-num = n;
-
-if (num == 0) 
-{
-	_write('0');
-	count++;
+	m = m * -1;
+	num = m;
+	count += 1;
 }
 
-else 
+while (num > 9)
 {
-	recursion_print_int(num);
-	while (num > 0)
-	{
-		num/=10;
-		count++;
-	}
+	num = num / 10;
+	count++;
 }
+
+recursion_int(m);
 return (count);
 }
 
-void recursion_print_int(unsigned int num)
+void recursion_print_int(int num)
 {
-if (num / 10)
+unsigned int x = num;
+
+if (x / 10)
 	recursion_print_int (num/ 10);
-_write(num % 10 + '0');
+_write(x % 10 + '0');
 
 }

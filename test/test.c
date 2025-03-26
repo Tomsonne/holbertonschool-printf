@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <limits.h>
+#include "holberton.h"
+
 
 int print_int(int n);
 void recursion_print_int(int val);
@@ -15,8 +17,26 @@ int main()
 int carac;
 int inte;
 int strin;
+int len;
+    int len2;
+    unsigned int ui;
+    void *addr;
 
-    char c = '%';
+len = _printf("Let's try to printf a simple sentence.\n");
+    len2 = printf("Let's try to printf a simple sentence.\n");
+    ui = (unsigned int)INT_MAX + 1024;
+    addr = (void *)0x7ffe637541f0;
+    _printf("Length:[%d, %i]\n", len, len);
+    
+    _printf("Negative:[%d]\n", -762534);
+    printf("Negative:[%d]\n", -762534);
+    _printf("Unsigned:[%u]\n", ui);
+    printf("Unsigned:[%u]\n", ui);
+    _printf("Unsigned octal:[%o]\n", ui);
+    printf("Unsigned octal:[%o]\n", ui);
+    _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+    printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
+/*   char c = '%';
     carac = print_char(c);
     _write('\n');
     printf("return de print_char : %d\n", carac);
@@ -28,12 +48,12 @@ int strin;
     printf("return de print_string : %d\n", strin);
     _write('\n');
 
-    int v = INT_MAX;
+    int v = INT_MIN ;
     inte = print_int(v);
     _write('\n');
     printf("return de print_int : %d\nEt valeur de v : %d", inte, v);
 
-    
+    */
     return 0;
 }
 
