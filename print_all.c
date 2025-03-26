@@ -54,6 +54,11 @@ len += _write('%');
 
 if (print_validate(format[i]) == 1)
 len += print_func_format(format[i], args);
+else
+{
+len += _write('%');
+len += _write(format[i]);
+}
 }
 else
 len += _write(format[i]);
