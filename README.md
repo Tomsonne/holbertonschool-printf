@@ -94,7 +94,6 @@ Affichage de % :
 
 Sortie : Percent: %
 
-Flowchart
 
 [Flowchart](images\Flowchart_printf.png)
 
