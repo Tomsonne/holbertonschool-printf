@@ -4,10 +4,10 @@
 #include <limits.h>
 
 /**
- * print_func_format - Écris un entier
+ * print_func_format - execute la fonction en lien avec le specifieur
  * @format: caractère apres le %
  * @args: variable a afficher dans le printf
- * Return: 1 ( pas d'erreur )
+ * Return: len de l'affichage ( pas d'erreur )
  */
 
 
