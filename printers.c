@@ -5,9 +5,13 @@
 
 
 /**
- * print_char - Écris un caractere
- * @args: type
- * Return: 1 ( pas d'erreur )
+ * print_char - affiche un caractere
+ * @args: liste des arguments (prends un caractere en parametre)
+ *
+ *Cette fonction récupère un caractère depuis la liste d'arguments
+ * et l'affiche à l'aide de `_write()`.
+ *
+ * Return: Toujours 1 ( car 1 caractere affiché)
  */
 
 int print_char(va_list args)
@@ -17,8 +21,12 @@ return (1);
 }
 
 /**
- * print_string - Écris une chaine de caractere
- * @args: type
+ * print_string - affiche une chaine de caractere
+ * @args: liste des arguments (prend une chaine en parametre)
+ *
+ *  Cette fonction affiche chaque caractère de la chaîne passée en argument.
+ * Si la chaîne est NULL, elle affiche "(null)".
+ *
  * Return: 1 ( pas d'erreur ) ou 6 si arg est NULL 6 car len de "(NULL)"=6
  */
 
@@ -46,9 +54,13 @@ return (6);
 }
 
 /**
- * print_int - Écris un entier
- * @args: type
- * Return: 1 ( pas d'erreur )
+ * print_int - affiche un entier signe
+ * @args: liste des arguments (entier)
+ *
+ * Cette fonction affiche un entier sous forme de caractères.
+ * Elle gère les nombres négatifs en affichant le signe '-'.
+ *
+ * Return: nombre total de chiffres affichés
  */
 
 int print_int(va_list args)
@@ -85,8 +97,12 @@ return (count);
 }
 
 /**
- * recursion_print_int - Écris un entier
+ * recursion_print_int - affiche un entier
  * @num: valeur a afficher
+ *
+ * Cette fonction utilise la récursivité pour afficher un entier
+ * chiffre par chiffre, en commençant par le plus significatif.
+ *
  * Return: void
  */
 

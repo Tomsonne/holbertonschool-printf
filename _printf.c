@@ -5,8 +5,10 @@
 
 /**
  * _printf - ma fonction printf
- * @format: string a afficher
- * Return: number of chars that print
+ * @format: chaine de caractere contenant le texte 
+ * et les formats (%s, %c, %d ...)
+ * Return: Nombre de caracteres total a affichés
+ * ou -1 en cas d'erreur.
  */
 int _printf(const char *format, ...)
 {

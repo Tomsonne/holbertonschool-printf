@@ -4,9 +4,9 @@
 #include <stdlib.h>
 #include <unistd.h>
 /**
- * print_validate - fonction pour valider si format est valide
- *@format: entree texte
- *Return: 1 si caractere valide 0 si caractere invalide
+ * print_validate - Verifie si un specifier de format est valide
+ *@format: caractere représentant le specifieur
+ *Return: 1 si format valide 0 si format invalide
  */
 int print_validate(char format)
 {
@@ -18,15 +18,18 @@ for (i = 0; format_valide[i] != '\0'; i++)
 if (format  == format_valide[i])
 	return (1);
 }
-
 return (0);
 }
 
 /**
- * print_all - fontion qui imprime selon un parametre
- * @args: variable a afficher dans le printf (%s %c %d ...)
- * @format: entree texte
- * Return: len est la longueur de la chaine afficher
+ * print_all - Analyse et affiche le format donné
+ * @args: liste des arguments a afficher
+ * @format: Chaine de format (ex : "Hello %s")
+ *
+ * Cette fonction analyse la chaîne `format`, détecte les spécifiers (%)
+ * et affiche le texte en appelant les fonctions appropriées.
+ *
+ * Return: Nombre total de caracteres affiches
  */
 
 int print_all(const char *format, va_list args)
@@ -37,7 +40,6 @@ int len = 0;
 
 while (format && format[i])
 {
-
 if (format[0] == '%' && format[1] == '\0')
 return (0);
 

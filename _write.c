@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * _write - Écris le caractere c placé en parametre
- * @c: C est le caratère a afficher
+ * _write - affiche le caractere sur la sortie standard (stdout)
+ * @c: caratère a afficher
  * 1 sert a préciser a write qu'on va agir en sortie standart (stdout)
  * &c est l'adresse du caractère c
  * 1 est le nombre d'octets ecris
- * Return: 1 car 1 octets a afficher
+ * Return: toujours 1 ( 1 octet est ecrit)
  */
 
 int _write(char c)

@@ -4,9 +4,13 @@
 #include <limits.h>
 
 /**
- * print_func_format - execute la fonction en lien avec le specifieur
- * @format: caractère apres le %
- * @args: variable a afficher dans le printf
+ * print_func_format - execute la fonction associee au specifieur de format
+ * @format: caractère apres le % indiquant le type de format
+ * @args: liste des arguments a afficher
+ *
+ * Cette fonction compare le format donné avec une liste de formats valides
+ * et appelle la fonction correspondante (ex: print_char pour '%c').
+ *
  * Return: len de l'affichage ( pas d'erreur )
  */
 
