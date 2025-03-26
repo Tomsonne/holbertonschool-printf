@@ -18,7 +18,7 @@ Retourner le nombre total de caractères imprimés.
 
 Description
 
-Le projet printf consiste à implémenter une version simplifiée de la fonction standard printf en C. Cette version gère plusieurs types de formats d'entrée, notamment les caractères, les chaînes de caractères et les entiers. L'objectif est de créer une fonction qui peut formater et afficher diverses données sur la sortie standard.
+Le projet _printf consiste à implémenter une version simplifiée de la fonction standard printf en C. Cette version gère plusieurs types de formats d'entrée, notamment les caractères, les chaînes de caractères et les entiers. L'objectif est de créer une fonction qui peut formater et afficher diverses données sur la sortie standard.
 
 Compilation
 
@@ -60,57 +60,43 @@ ce fichier contient la fonction print_all est chargée de parcourir la chaîne d
 Exemple d'utilisation
 Voici quelques exemples d'utilisation de la fonction _printf :
 
+pour utilser notre fonction _printf utiliser la bilbliotheque "main.h"
+
 Affichage d'une chaîne de caractères :
 
-#include "main.h"
-
-int main(void)
 {
     _printf("Hello, %s!\n", "World");
-    return (0);
 }
 
 Sortie : Hello, World!
 
 Affichage d'un caractère :
 
-#include "main.h"
-
-int main(void)
 {
     _printf("Character: %c\n", 'A');
-    return (0);
 }
 
 Sortie : Character: A
 
 Affichage d'un entier :
 
-#include "main.h"
-
-int main(void)
 {
     _printf("Integer: %d\n", 42);
-    return (0);
 }
 
 Sortie : Integer: 42
 
 Affichage de % :
 
-#include "main.h"
-
-int main(void)
 {
     _printf("Percent: %%\n");
-    return (0);
 }
 
 Sortie : Percent: %
 
 Flowchart
 
-![Flowchart](images\Flowchart_printf.png)
+[Flowchart](images\Flowchart_printf.png)
 
 
 Auteurs
