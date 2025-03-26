@@ -69,6 +69,7 @@ int main(void)
     _printf("Hello, %s!\n", "World");
     return (0);
 }
+
 Sortie : Hello, World!
 
 Affichage d'un caractère :
@@ -80,6 +81,7 @@ int main(void)
     _printf("Character: %c\n", 'A');
     return (0);
 }
+
 Sortie : Character: A
 
 Affichage d'un entier :
@@ -91,6 +93,7 @@ int main(void)
     _printf("Integer: %d\n", 42);
     return (0);
 }
+
 Sortie : Integer: 42
 
 Affichage de % :
@@ -102,6 +105,7 @@ int main(void)
     _printf("Percent: %%\n");
     return (0);
 }
+
 Sortie : Percent: %
 
 Flowchart
