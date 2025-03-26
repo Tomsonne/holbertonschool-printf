@@ -40,15 +40,17 @@ while (format && format[i])
 
 if (format[0] == '%' && format[1] == '\0')
 return (0);
+
 if (format[i] == '%')
 {
 i++;
-while (format[i] == ' ') /*gére si % et le specifier sont espacés*/
+/*gére si % et le specifier sont espacés*/
+while (format[i] == ' ')
 i++;
 
-if (format[i] == '%')
 /*gére si le specifier vaut aussi % et afficher % et ajoute 1 a len*/
-len += _write(format[i]);
+if (format[i] == '%')
+len += _write('%');
 
 if (print_validate(format[i]) == 1)
 len += print_func_format(format[i], args);
