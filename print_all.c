@@ -52,7 +52,7 @@ i++;
 if (format[i] == '%')
 len += _write('%');
 
-if (print_validate(format[i]) == 1)
+else if (print_validate(format[i]) == 1)
 len += print_func_format(format[i], args);
 else
 {
