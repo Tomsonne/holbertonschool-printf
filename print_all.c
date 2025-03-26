@@ -37,6 +37,8 @@ int len = 0;
 
 while (format && format[i])
 {
+if (format[0] == '%' && format[1] == '\0')
+return (0);
 if (format[i] == '%')
 {
 i++;
