@@ -66,28 +66,34 @@ if (n < 0)
 else
 num = n;
 
-if (num == 0) 
+if (num == 0)
 {
 	_write('0');
 	count++;
 }
 
-else 
+else
 {
 	recursion_print_int(num);
 	while (num > 0)
 	{
-		num/=10;
+		num /= 10;
 		count++;
 	}
 }
 return (count);
 }
 
+/**
+ * recursion_print_int - Écris un entier
+ * @num: valeur a afficher
+ * Return: void
+ */
+
 void recursion_print_int(unsigned int num)
 {
 if (num / 10)
-	recursion_print_int (num/ 10);
+	recursion_print_int (num / 10);
 _write(num % 10 + '0');
 
 }

@@ -13,7 +13,6 @@ int main(void)
     int len2;
     /*unsigned int ui;*/
     /* void *addr;*/
-
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
     /*
@@ -31,10 +30,9 @@ int main(void)
     len = _printf("Percent:[%%]\n");
     len2 = printf("Percent:[%%]\n");
     _printf("Len:[%d]\n", len);
-    printf("Len:{[%d]\n", len2);
+    printf("Len:[%d]\n", len2);
     _printf("Unknown:[%r]\n");
     printf("Unknown:[%r]\n");
-
     /*
     _printf("Unsigned:[%u]\n", ui);
     printf("Unsigned:[%u]\n", ui);
@@ -44,8 +42,6 @@ int main(void)
     printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
     _printf("Address:[%p]\n", addr);
     printf("Address:[%p]\n", addr);
-
-    */
-    
+    */    
     return (0);
 }
