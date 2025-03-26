@@ -21,5 +21,4 @@ va_start(args, format);
 len = print_all(format, args);
 va_end(args);
 return (len);
-
 }
