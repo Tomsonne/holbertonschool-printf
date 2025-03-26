@@ -1,0 +1,61 @@
+.TH PRINTF 3 "March 2025" "1.0" "Libc manual"
+.SH NAME
+_printf \- Implémentation personnalisée de la fonction printf
+.SH SYNOPSIS
+.nf
+#include "main.h"
+
+int _printf(const char *format, ...);
+.fi
+.SH DESCRIPTION
+
+Les formats supportés sont :
+
+- **%c** : Affiche un caractère.
+- **%s** : Affiche une chaîne de caractères. Si l argument est NULL, elle affiche "(NULL)".
+- **%d ou %i** : Affiche un entier. La fonction gère les entiers négatifs ainsi que le cas particulier de INT_MIN.
+- **%%** : Affiche le caractère %.
+
+### PARAMÈTRES
+
+- **format** : Une chaîne de caractères qui peut contenir des spécificateurs de format qui commencent par % et sont suivis d un ou plusieurs caractères.
+  
+### RETOUR
+
+La fonction retourne le nombre de caractères imprimés (sans compter le caractère nul de fin de chaîne). Si un format invalide est rencontré, aucun caractère n est imprimé et la fonction passe au format suivant.
+
+### COMPILATION
+
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+
+### EXEMPLES
+
+Voici quelques exemples d utilisation de la fonction _printf :
+
+Affichage d une chaîne de caractères :
+
+_printf("Hello, %s!\n", "World");
+Affiche : Hello, World!
+
+Affichage d un caractère :
+
+_printf("Character: %c\n", 'A');
+Affiche : Character: A
+
+Affichage d un entier :
+
+_printf("Integer: %d\n", 42);
+Affiche : Integer: 42
+
+Affichage de % :
+
+_printf("Percent: %%\n");
+Affiche : Percent: %
+
+ERREURS
+Si un format non valide est rencontré, la fonction _printf ignore ce format et passe au suivant. Si la chaîne de format est NULL, la fonction retourne -1.
+
+AUTEURS
+Ce projet a été développé par :
+
+Thomas ROUSSEAU Shakib ROJAS
