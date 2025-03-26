@@ -21,7 +21,7 @@ form format_types[] = {
 	{'s', print_string},
 	{'d', print_int},
 	{'i', print_int},
-	{'%', print_char},
+	{'%', NULL},
 	{'\0', NULL},
 };
 
