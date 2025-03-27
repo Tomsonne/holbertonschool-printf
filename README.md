@@ -1,6 +1,6 @@
-Projet _printf
+#rojet _printf
 
-Introduction
+##Introduction
 
 Bienvenue dans le projet printf. Cette implémentation de la fonction printf en C vise à reproduire le comportement de la fonction standard printf en gérant une variété de spécificateurs.
 
@@ -16,17 +16,17 @@ Implémenter un mécanisme de validation des formats,
 
 Retourner le nombre total de caractères imprimés.
 
-Description
+##Description
 
 Le projet _printf consiste à implémenter une version simplifiée de la fonction standard printf en C. Cette version gère plusieurs types de formats d'entrée, notamment les caractères, les chaînes de caractères et les entiers. L'objectif est de créer une fonction qui peut formater et afficher diverses données sur la sortie standard.
 
-Compilation
+##Compilation
 
 Pour compiler le projet, vous pouvez utiliser la commande suivante :
 
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
-Fonctionnalités
+##Fonctionnalités
 
 La fonction _printf implémente plusieurs spécificateurs de format :
 
