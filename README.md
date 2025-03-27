@@ -1,6 +1,6 @@
-#rojet _printf
+# Projet _printf
 
-##Introduction
+## Introduction
 
 Bienvenue dans le projet printf. Cette implémentation de la fonction printf en C vise à reproduire le comportement de la fonction standard printf en gérant une variété de spécificateurs.
 
@@ -16,17 +16,17 @@ Implémenter un mécanisme de validation des formats,
 
 Retourner le nombre total de caractères imprimés.
 
-##Description
+## Description
 
 Le projet _printf consiste à implémenter une version simplifiée de la fonction standard printf en C. Cette version gère plusieurs types de formats d'entrée, notamment les caractères, les chaînes de caractères et les entiers. L'objectif est de créer une fonction qui peut formater et afficher diverses données sur la sortie standard.
 
-##Compilation
+## Compilation
 
 Pour compiler le projet, vous pouvez utiliser la commande suivante :
 
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
 
-##Fonctionnalités
+## Fonctionnalités
 
 La fonction _printf implémente plusieurs spécificateurs de format :
 
@@ -57,41 +57,43 @@ ce fichier contient la fonction print_validate. Cette fonction prend le caracter
 print_all.c
 ce fichier contient la fonction print_all est chargée de parcourir la chaîne de format passée à la fonction _printf et de traiter chaque caractère individuellement. Lorsqu'elle rencontre un spécificateur de format, elle appelle la fonction correspondante pour traiter et afficher l'argument associé à ce format. Elle gère également les autres caractères qui ne sont pas des spécificateurs de format en les imprimant directement.
 
-Exemple d'utilisation
+## Exemple d'utilisation
 Voici quelques exemples d'utilisation de la fonction _printf :
 
 pour utilser notre fonction _printf utiliser la bilbliotheque "main.h"
 
 Affichage d'une chaîne de caractères :
-
+```c
 {
     _printf("Hello, %s!\n", "World");
 }
-
+```c
 Sortie : Hello, World!
 
-Affichage d'un caractère :
+Affichage d''un caractère :
+```c
 
 {
     _printf("Character: %c\n", 'A');
 }
+```c
 
 Sortie : Character: A
 
-Affichage d'un entier :
-
+Affichage d''un entier :
+```c
 {
     _printf("Integer: %d\n", 42);
 }
-
+```c
 Sortie : Integer: 42
 
 Affichage de % :
-
+```c
 {
     _printf("Percent: %%\n");
 }
-
+```c
 Sortie : Percent: %
 
 Flowchart
