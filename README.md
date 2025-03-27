@@ -100,6 +100,7 @@ Flowchart
 
 
 Auteurs
+
 Ce projet a été développé par :
 
 [Thomas ROUSSEAU](https://github.com/Tomsonne) et [Shakib ROJAS](https://github.com/SR9401).
