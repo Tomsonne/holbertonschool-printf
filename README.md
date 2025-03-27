@@ -38,7 +38,7 @@ La fonction _printf implémente plusieurs spécificateurs de format :
 
 %% : Affiche le caractère %.
 
-Fichiers du projet
+## Fichiers du projet
 Le projet se compose des fichiers suivants :
 
 main.h : Contient les déclarations des fonctions utilisées dans le projet, ainsi que la structure pour associer les formats aux fonctions correspondantes.
@@ -67,7 +67,7 @@ Affichage d'une chaîne de caractères :
 {
     _printf("Hello, %s!\n", "World");
 }
-```c
+```
 Sortie : Hello, World!
 
 Affichage d''un caractère :
@@ -76,7 +76,7 @@ Affichage d''un caractère :
 {
     _printf("Character: %c\n", 'A');
 }
-```c
+```
 
 Sortie : Character: A
 
@@ -85,7 +85,7 @@ Affichage d''un entier :
 {
     _printf("Integer: %d\n", 42);
 }
-```c
+```
 Sortie : Integer: 42
 
 Affichage de % :
@@ -93,7 +93,7 @@ Affichage de % :
 {
     _printf("Percent: %%\n");
 }
-```c
+```
 Sortie : Percent: %
 
 Flowchart
