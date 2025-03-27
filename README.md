@@ -96,12 +96,12 @@ Affichage de % :
 ```
 Sortie : Percent: %
 
-Flowchart
+##Flowchart
 
 <img src="images/Flowchart_printf.png" alt="Flowchart" width="300" height="600">
 
 
-Auteurs
+##Auteurs
 
 Ce projet a été développé par :
 
