@@ -95,10 +95,10 @@ Affichage de % :
 Sortie : Percent: %
 
 
-[Flowchart](images\Flowchart_printf.png)
+![Flowchart](images/Flowchart_printf.png)
 
 
 Auteurs
 Ce projet a été développé par :
 
-Thomas ROUSSEAU et Shakib ROJAS.
+[Thomas ROUSSEAU](https://github.com/Tomsonne) et [Shakib ROJAS](https://github.com/SR9401).
