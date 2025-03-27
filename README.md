@@ -98,8 +98,7 @@ Sortie : Percent: %
 
 Flowchart
 
-![Flowchart](images/Flowchart_printf.png){ width=300 height=200 }
-<img src="images/Flowchart_printf.png" alt="Flowchart" width="600" height="200">
+<img src="images/Flowchart_printf.png" alt="Flowchart" width="200" height="600">
 
 
 Auteurs
