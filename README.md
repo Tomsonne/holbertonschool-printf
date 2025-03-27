@@ -100,12 +100,12 @@ Affichage de % :
 Sortie : Percent: %
 Valeur retour : 11
 
-##Flowchart
+## Flowchart
 
 <img src="images\FlowChart_final.png" alt="Flowchart" width="300" height="600">
 
 
-##Auteurs
+## Auteurs
 
 Ce projet a été développé par :
 
