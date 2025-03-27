@@ -98,7 +98,7 @@ Sortie : Percent: %
 
 Flowchart
 
-<img src="images/Flowchart_printf.png" alt="Flowchart" width="275" height="600">
+<img src="images/Flowchart_printf.png" alt="Flowchart" width="300" height="600">
 
 
 Auteurs
