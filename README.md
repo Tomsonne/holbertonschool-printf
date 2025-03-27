@@ -69,6 +69,7 @@ Affichage d'une chaîne de caractères :
 }
 ```
 Sortie : Hello, World!
+Valeur retour : 14
 
 Affichage d''un caractère :
 ```c
@@ -79,6 +80,7 @@ Affichage d''un caractère :
 ```
 
 Sortie : Character: A
+Valeur retour : 13
 
 Affichage d''un entier :
 ```c
@@ -87,6 +89,7 @@ Affichage d''un entier :
 }
 ```
 Sortie : Integer: 42
+Valeur retour : 12
 
 Affichage de % :
 ```c
@@ -95,10 +98,11 @@ Affichage de % :
 }
 ```
 Sortie : Percent: %
+Valeur retour : 11
 
 ##Flowchart
 
-<img src="images/Flowchart_printf.png" alt="Flowchart" width="300" height="600">
+<img src="images\FlowChart_final.png" alt="Flowchart" width="300" height="600">
 
 
 ##Auteurs
