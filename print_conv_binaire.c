@@ -15,7 +15,7 @@
  // mais je n'arrive pas à faire l'algo. Merci de votre aide
 
 
-int print_conv_binaire(va_list args) 
+int print_conv_binaire(va_list args)
 {
 int index = 0;
 int cpindex;

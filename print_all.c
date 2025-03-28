@@ -11,7 +11,7 @@
 int print_validate(char format)
 {
 	int i = 0;
-	char format_valide[] = "csdi";
+	char format_valide[] = "csdib";
 
 for (i = 0; format_valide[i] != '\0'; i++)
 {
