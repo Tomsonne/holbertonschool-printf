@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <limits.h>
-#include "holberton.h"
+//#include "holberton.h"
 
 
 int print_int(int n);
@@ -10,10 +10,20 @@ void recursion_print_int(int val);
 int _write(char c);
 int print_char(char c);
 int print_string(char* string);
+int print_conv_binaire(unsigned int num);
 
 
 int main()
 {
+
+    unsigned int num = 123456;
+    int len = 0;
+    len = print_conv_binaire(num);
+    printf("\nlen de print_conv_binaire :%d\n",len);
+
+
+
+    /*
 int carac;
 int inte;
 int strin;
@@ -36,7 +46,7 @@ len = _printf("Let's try to printf a simple sentence.\n");
     printf("Unsigned octal:[%o]\n", ui);
     _printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
     printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
-/*   char c = '%';
+    char c = '%';
     carac = print_char(c);
     _write('\n');
     printf("return de print_char : %d\n", carac);
@@ -135,4 +145,39 @@ void recursion_print_int(int num)
 int _write(char c)
 {
 return (write(1, &c, 1));
+}
+
+
+int print_conv_binaire(unsigned int num) 
+{
+int index = 0;
+int cpindex;
+char *binaire;
+
+binaire = malloc(33); 
+
+while(num > 0)
+{
+    if (num%2 == 1)
+    {
+        binaire[index] = '1';
+        index++;
+    }
+    else
+    {
+        binaire[index] = '0';
+        index++;
+    }
+    num = num / 2;
+}
+cpindex = index-1;
+while(cpindex!=0)
+{
+    _write(binaire[cpindex]);
+    cpindex--;
+}
+
+
+
+return (index-1);    
 }
