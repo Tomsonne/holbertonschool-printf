@@ -34,5 +34,6 @@ for (i = index -1; i >= 0; i--)
 {
 _write(binaire[i]);
 }
+va_end(args);
 return (index);
 }
