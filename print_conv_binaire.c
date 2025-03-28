@@ -14,30 +14,25 @@
 int print_conv_binaire(va_list args)
 {
 int index = 0;
-int cpindex;
+int i;
 char *binaire;
 int num = va_arg(args, int);
 
 binaire = malloc(33);
+
+if (num == 0)
+{
+_write('0');
+return (1);
+}
 while (num > 0)
 {
-if (num % 2 == 1)
-{
-binaire[index] = '1';
-index++;
-}
-else
-{
-binaire[index] = '0';
-index++;
-}
+binaire[index++] = (num % 2) + '0';
 num = num / 2;
 }
-cpindex = index ;
-while (cpindex != 0)
+for (i = index -1; i>=0; i++)
 {
-_write(binaire[cpindex]);
-cpindex--;
+_write(binaire[i]);
 }
 return (index);
 }
