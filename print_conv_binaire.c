@@ -33,7 +33,7 @@ index++;
 }
 num = num / 2;
 }
-cpindex = index - 1;
+cpindex = index ;
 while (cpindex > 0)
 {
 _write(binaire[cpindex]);
