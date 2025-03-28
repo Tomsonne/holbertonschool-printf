@@ -12,6 +12,8 @@ int print_func_format(const char format, va_list args);
 int print_all(const char *format, va_list args);
 int _write(char c);
 int _printf(const char *format, ...);
+int print_conv_binaire(va_list args);
+
 
 
 typedef struct format_types
