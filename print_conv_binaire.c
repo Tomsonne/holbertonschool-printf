@@ -34,10 +34,10 @@ index++;
 num = num / 2;
 }
 cpindex = index - 1;
-while (cpindex != 0)
+while (cpindex > 0)
 {
 _write(binaire[cpindex]);
 cpindex--;
 }
-return (index - 1);
+return (index);
 }
