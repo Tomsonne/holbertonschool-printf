@@ -16,9 +16,9 @@ int print_conv_binaire(va_list args)
 int index = 0;
 int i;
 char *binaire;
-int num = va_arg(args, int);
+unsigned int num = va_arg(args, unsigned int);
 
-binaire = malloc(33);
+binaire = malloc(65);
 
 if (num == 0)
 {
